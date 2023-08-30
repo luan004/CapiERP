@@ -34,6 +34,12 @@
             <label for="data_nascimento">Data de Nascimento</label>
             <input type="date" name="data_nascimento" placeholder="Data de nascimento do cliente">
 
+            <label for="genero">Gênero</label>
+            <select name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
             <button class="button button-green button-fluid">
                 Cadastrar
             </button>
@@ -47,6 +53,7 @@
                     <th>Telefone</th>
                     <th>E-Mail</th>
                     <th>Data de Nascimento</th>
+                    <th>Gênero</th>
                     <th>Editar</th>
                     <th>Excluir</th>
                 </tr>
@@ -58,6 +65,7 @@
                     <td>(00) 00000-0000</td>
                     <td>mail@mail.com</td>
                     <td>01/01/2000</td>
+                    <td>Masculino</td>
                     <td>
                         <button class="button button-blue">
                             Editar

@@ -18,6 +18,23 @@
                 Criar novo produto
             </button>
         </div>
+        <form style="display: none">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Nome do produto">
+
+            <label for="preco">Preço</label>
+            <input type="number" name="preco" placeholder="Preço do produto">
+
+            <label for="quantidade">Quantidade</label>
+            <input type="range" name="quantidade" min="0" max="100" value="0">
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" placeholder="Descrição do produto"></textarea>
+
+            <button class="button button-green button-fluid">
+                Cadastrar
+            </button>
+        </form>
         <!-- table -->
         <table>
             <thead>
