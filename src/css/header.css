@@ -3,6 +3,7 @@ header {
     width: 100%;
     background-color: rgb(202, 202, 202);
     display: flex;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 .menu {
     width: 100%;
@@ -12,6 +13,7 @@ header {
 }
 ul {
     margin: 0;
+    list-style-type: none;
 }
 li {
     float: left;

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="src/css/style.css">
 <link rel="stylesheet" href="src/css/header.css">
 
 <header>
@@ -14,7 +15,5 @@
             <li><a href="sobre.php">Sobre</a></li>
         </ul>
     </div>
-    <div class="login">
-        <a href="login.php">Login</a>
-    </div>
+    <a class="button button-green" href="login.php">Login</a>
 </header>
