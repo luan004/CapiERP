@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .row {
     display: flex;
 }
@@ -24,4 +29,49 @@
 
 .button.button-fluid {
     width: 100%;
+}
+
+.formLogin {
+    position: relative;
+    margin: auto;
+    background-color: grey;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+}
+.formLogin h1 {
+    margin: 0;
+    text-align: center;
+}
+input {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+}
+.footer1 {
+    padding: 5px;
+}
+.footer2 {
+    padding: 5px;
+    background-color: grey;
 }

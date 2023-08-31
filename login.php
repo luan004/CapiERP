@@ -12,14 +12,12 @@
 
     <!-- conteudo -->
     <div class="root">
-        <div class="login">
-            <form>
-                <h1>Login</h1>
-                <input type="text" placeholder="Usuário">
-                <input type="password" placeholder="Senha">
-                <input type="submit" value="Entrar">
-            </form>
-        </div>
+        <form class="formLogin">
+            <h1>Login</h1>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <input type="submit" value="Entrar">
+        </form>
     </div>
 
     <!-- rodape -->

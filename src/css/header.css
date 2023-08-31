@@ -1,0 +1,32 @@
+/* HEADER */
+header {
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    margin: 0;
+}
+li {
+    float: left;
+    padding: 10px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+li:hover {
+    background-color: rgb(255, 255, 255);
+}
+.login {
+    padding: 10px 40px;
+    background-color: rgb(124, 54, 54);
+}
