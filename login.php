@@ -17,7 +17,7 @@
             <h1>Login</h1>
             <input type="text" placeholder="Usuário">
             <input type="password" placeholder="Senha">
-            <input type="submit" value="Entrar">
+            <button class="button button-green fluid" type="submit">Entrar</button>
         </form>
     </div>
 
