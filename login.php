@@ -24,4 +24,5 @@
     <!-- rodape -->
     <?php include 'src/layout/footer.php'; ?>
 </body>
+<script src="src/js/login.js"></script>
 </html>

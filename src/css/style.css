@@ -7,6 +7,10 @@ body {
     display: flex;
 }
 
+.fluid {
+    width: 100%;
+}
+
 .button {
     padding: 10px;
     text-align: center;
@@ -16,28 +20,22 @@ body {
     transition: 0.3s;
     border: none;
     border: 2px solid rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
-.button.button-green {
-    background-color: green;
-}
-
-.button.button-red {
-    background-color: red;
-}
-
-.button.button-blue {
-    background-color: blue;
+    text-decoration: none                                       ;
 }
 .button:hover {
     cursor: pointer;
     filter: brightness(1.2);
 }
-
-.fluid {
-    width: 100%;
+.button.button-green {
+    background-color: green;
 }
+.button.button-red {
+    background-color: red;
+}
+.button.button-blue {
+    background-color: blue;
+}
+
 input {
     display: block;
     border-radius: 10px;

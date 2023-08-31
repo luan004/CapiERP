@@ -15,5 +15,9 @@
             <li><a href="sobre.php">Sobre</a></li>
         </ul>
     </div>
-    <a class="button button-green" href="login.php">Login</a>
+    <?php
+        if (!isset($_SESSION['user'])) {
+            echo '<a class="button button-green" href="login.php">Login</a>';
+        }
+    ?>
 </header>
