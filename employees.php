@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<div>teste</div><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
     <!-- conteudo -->
     <div class="root">
-        
+        <div>teste</div>
     </div>
 
     <!-- rodape -->
