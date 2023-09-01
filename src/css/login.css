@@ -25,3 +25,7 @@
 small {
     color: rgb(104, 4, 4);
 }
+progress {
+    width: 100%;
+    color: blue;
+}
