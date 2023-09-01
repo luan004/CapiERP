@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="src/css/style.css">
-<link rel="stylesheet" href="src/css/header.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/header.css">
 
 <header>
     <div class="logo">
@@ -15,9 +15,5 @@
             <li><a href="sobre.php">Sobre</a></li>
         </ul>
     </div>
-    <?php
-        if (!isset($_SESSION['user'])) {
-            echo '<a class="button button-green" href="login.php">Login</a>';
-        }
-    ?>
+    <p>Admin</p>
 </header>
