@@ -42,7 +42,7 @@ body {
     background-color: blue;
 }
 
-input {
+input, textarea, .file-input {
     display: block;
     border-radius: 10px;
     border: none;
@@ -54,4 +54,8 @@ input {
 }
 a {
     text-decoration: none;
+}
+label {
+    display: block;
+    margin-bottom: 5p;
 }

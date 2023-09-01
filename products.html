@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos | CapiERP</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/products.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
-    <?php include 'src/layout/header.php'; ?>
+    <div id="header"></div>
 
     <!-- conteudo -->
     <div class="root">
         <div class="row">
-            <h5>Produtos</h5>
+            <h3>Produtos</h3>
             <button class="button button-green">
                 Criar novo produto
             </button>
         </div>
-        <form style="display: none">
+        <form id="formProduto">
             <label for="nome">Nome</label>
             <input type="text" name="nome" placeholder="Nome do produto">
 
@@ -31,7 +34,10 @@
             <label for="descricao">Descrição</label>
             <textarea name="descricao" placeholder="Descrição do produto"></textarea>
 
-            <button class="button button-green button-fluid">
+            <label for="imagem">Imagem do Produto</label>
+            <input class="file-input" type="file" name="imagem">
+
+            <button type="submit" class="button button-green fluid">
                 Cadastrar
             </button>
         </form>
@@ -43,7 +49,6 @@
                     <th>Preço</th>
                     <th>Quantidade</th>
                     <th>Descrição</th>
-                    <th>Editar</th>
                     <th>Excluir</th>
                 </tr>
             </thead>
@@ -52,6 +57,18 @@
                     <td>Produto 1</td>
                     <td>R$ 10,00</td>
                     <td>10</td>
+                    <td>Descrição do produto 1</td>
+                    <td>
+                        <button class="button button-red">
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>R$ 10,00</td>
+                    <td>10</td>
+                    <td>Descrição do produto 1</td>
                     <td>
                         <button class="button button-red">
                             Excluir
@@ -59,9 +76,11 @@
                     </td>
                 </tr>
             </tbody>
+        </table>
     </div>
 
     <!-- rodape -->
-    <?php include 'src/layout/footer.php'; ?>
+    <div id="footer"></div>
 </body>
+<script src="src/js/products.js"></script>
 </html>

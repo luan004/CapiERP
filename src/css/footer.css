@@ -1,16 +1,19 @@
-/* FOOTER */
 footer {
-    bottom: 0;
-    position: absolute;
     width: 100%;
     text-align: center;
-    background-color: rgb(202, 202, 202);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #292929;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);]
 }
 .footer1 {
+    height: 45px;
     padding: 5px;
+    color: white;
+}
+.footer1 a {
+    color: rgb(89, 193, 211);
 }
 .footer2 {
-    padding: 5px;
-    background-color: grey;
+    padding: 2px 5px;
+    color: white;
+    background-color: #141414;
 }
