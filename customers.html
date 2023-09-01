@@ -4,83 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes | CapiERP</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/table.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
-    <?php include 'src/layout/header.php'; ?>
+    <div id="header"></div>
 
     <!-- conteudo -->
     <div class="root">
         <div class="row">
-            <h5>Produtos</h5>
-            <button class="button button-green">
+            <h3>Clientes</h3>
+            <button id="novoCliente" class="button button-green">
                 Cadastrar novo cliente
             </button>
         </div>
-        <form style="display: none">
+        <form style="display: none;" id="form">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" placeholder="Nome do cliente">
+            <input id="nome" type="text" name="nome" placeholder="Nome do Cliente">
 
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" placeholder="CPF do cliente">
+            <input id="cpf" type="number" name="cpf" placeholder="CPF">
 
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" placeholder="Telefone do cliente">
+            <label for="tel">Telefone</label>
+            <input id="tel" type="number" name="tel" placeholder="Telefone">
 
-            <label for="email">E-Mail</label>
-            <input type="text" name="email" placeholder="E-Mail do cliente">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="E-mail">
 
-            <label for="data_nascimento">Data de Nascimento</label>
-            <input type="date" name="data_nascimento" placeholder="Data de nascimento do cliente">
+            <div class="row" style="margin-bottom: 10px;">
+                <label>Masculino</label>
+                <input type="radio" name="genero" value="M" checked>
+                <label>Feminino</label>
+                <input type="radio" name="genero" value="F">
+            </div>
 
-            <label for="genero">Gênero</label>
-            <select name="genero">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-            </select>
+            <label for="data">Data de Nascimento</label>
+            <input id="data" type="date" name="data">
 
-            <button class="button button-green button-fluid">
+            <button type="submit" class="button button-green fluid">
                 Cadastrar
             </button>
         </form>
         <!-- table -->
-        <table>
+        <table id="table">
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>CPF</th>
                     <th>Telefone</th>
-                    <th>E-Mail</th>
+                    <th>E-mail</th>
+                    <th>Genero</th>
                     <th>Data de Nascimento</th>
-                    <th>Gênero</th>
-                    <th>Editar</th>
                     <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Cliente 1</td>
-                    <td>000.000.000-00</td>
-                    <td>(00) 00000-0000</td>
-                    <td>mail@mail.com</td>
-                    <td>01/01/2000</td>
-                    <td>Masculino</td>
+                    <td>Fulano</td>
+                    <td>123.456.789-10</td>
+                    <td>(11) 9 9999-9999</td>
+                    <td>email@email.com</td>
+                    <td>M</td>
+                    <td>2004-04-14</td>
                     <td>
-                        <button class="button button-blue">
-                            Editar
+                        <button class="button button-red remove">
+                            Excluir
                         </button>
                     </td>
+                </tr>
+                <tr>
+                    <td>Fulana</td>
+                    <td>987.654.321-10</td>
+                    <td>(44) 9 9999-9999</td>
+                    <td>fulana@gmail.com</td>
+                    <td>F</td>
+                    <td>1990-12-04</td>
                     <td>
-                        <button class="button button-red">
+                        <button class="button button-red remove">
                             Excluir
                         </button>
                     </td>
                 </tr>
             </tbody>
+        </table>
     </div>
 
     <!-- rodape -->
-    <?php include 'src/layout/footer.php'; ?>
+    <div id="footer"></div>
 </body>
+<script src="src/js/customers.js"></script>
 </html>

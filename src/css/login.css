@@ -7,16 +7,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #dde5f4;
+    background-color: #1a1a1a;
     height: 100vh;
 }
 .formLogin {
+    color: white;
     position: relative;
     margin: auto;
-    background-color: #919cb1;
-    padding: 20px;
     width: 400px;
-    border-radius: 20px;
+    padding: 20px;
+    background-color: #292929;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 .formLogin h1 {
     margin: 0 0 20px 0;
