@@ -1,12 +1,24 @@
+.rootlogin {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dde5f4;
+    height: 100vh;
+}
 .formLogin {
     position: relative;
     margin: auto;
-    background-color: grey;
+    background-color: #919cb1;
     padding: 20px;
     width: 400px;
     border-radius: 20px;
 }
 .formLogin h1 {
-    margin: 0;
+    margin: 0 0 20px 0;
     text-align: center;
 }

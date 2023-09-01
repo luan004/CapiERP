@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="src/css/login.css">
 </head>
 <body>
-    <!-- header -->
-    <?php include 'src/layout/header.php'; ?>
-
     <!-- conteudo -->
-    <div class="root">
+    <div class="rootlogin">
         <form class="formLogin">
             <h1>Login</h1>
             <input type="text" placeholder="Usuário">
@@ -20,9 +17,6 @@
             <button class="button button-green fluid" type="submit">Entrar</button>
         </form>
     </div>
-
-    <!-- rodape -->
-    <?php include 'src/layout/footer.php'; ?>
 </body>
 <script src="src/js/login.js"></script>
 </html>
