@@ -1,5 +1,7 @@
 /* FOOTER */
 footer {
+    bottom: 0;
+    position: absolute;
     width: 100%;
     text-align: center;
     background-color: rgb(202, 202, 202);

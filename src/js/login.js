@@ -5,7 +5,7 @@ $('#formLogin').submit(function(e) {
     const pass = $('#pass').val();
 
     if (user == 'admin' && pass == 'admin') {
-        window.location.href = 'index.html';
+        window.location.href = 'panel.html';
     } else {
         $('#error').show();
     }

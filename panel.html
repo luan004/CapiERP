@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel | CapiERP</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/panel.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
-    <?php include 'src/layout/header.php'; ?>
+    <div id="header"></div>
 
     <!-- conteudo -->
     <div class="root">
-        <h3>Seja bem-vindo, placeholder</h3>
-        <div class="box">
+        <h3>Seja bem-vindo</h3>
+        <div class="row">
             <div class="item">
                 <h4>Produtos</h4>
                 <p>Adicione ou remova produtos</p>
-                <a href="produtos.php">Acessar</a>
+                <button class="button button-blue fluid">Acessar</button>
             </div>
             <div class="item">
                 <h4>Clientes</h4>
                 <p>Adicione ou remova clientes</p>
-                <a href="clientes.php">Acessar</a>
+                <button class="button button-blue fluid">Acessar</button>
             </div>
             <div class="item">
                 <h4>Funcionários</h4>
                 <p>Adicione ou remova funcionários</p>
-                <a href="vendas.php">Acessar</a>
+                <button class="button button-blue fluid">Acessar</button>
             </div>
             <div class="item">
                 <h4>Vendas</h4>
                 <p>Realize vendas para clientes</p>
-                <a href="vendas.php">Acessar</a>
+                <button class="button button-blue fluid">Acessar</button>
             </div>
         </div>
     </div>
 
     <!-- rodape -->
-    <?php include 'src/layout/footer.php'; ?>
+    <div id="footer"></div>
 </body>
+<script src="src/js/panel.js"></script>
 </html>
