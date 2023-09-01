@@ -6,7 +6,7 @@ $(document).ready(function () {
 });
 
 let np = false;
-$('#novoProduto').click(function () {
+document.getElementById('novoProduto').addEventListener('click', function () {
     if (np) {
         $('#formProduto').slideUp();
         np = false;

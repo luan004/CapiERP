@@ -6,10 +6,10 @@ $(document).ready(function () {
 let np = false;
 $('#novoCliente').click(function () {
     if (np) {
-        $('#form').slideUp();
+        $('#form').hide();
         np = false;
     } else {
-        $('#form').slideDown();
+        $('#form').show();
         np = true;
     }
 });
