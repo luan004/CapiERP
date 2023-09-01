@@ -1,11 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
 .root {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: auto;
     width: 100%;
-    box-sizing: border-box;
+    max-width: 800px;
     padding: 30px;
+    background-color: #292929;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 100px auto;
 }
 
 .row h3 {
@@ -17,10 +29,17 @@ table, th, td {
     border-collapse: collapse;
     text-align: center;
 }
+
+tr {
+    background-color: #292929;
+}
+
 thead {
     background-color: #f1f1f1;
 }
+
 form {
     padding: 20px;
-    background-color: grey;
+    background-color: #1a1a1a;
+    border-radius: 10px;
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos | CapiERP</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/products.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/products.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
@@ -17,22 +17,22 @@
     <div class="root">
         <div class="row">
             <h3>Produtos</h3>
-            <button class="button button-green">
+            <button id="novoProduto" class="button button-green">
                 Criar novo produto
             </button>
         </div>
-        <form id="formProduto">
+        <form style="display: none;" id="formProduto">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" placeholder="Nome do produto">
+            <input id="nome" type="text" name="nome" placeholder="Nome do produto">
 
             <label for="preco">Preço</label>
-            <input type="number" name="preco" placeholder="Preço do produto">
+            <input id="preco" type="number" name="preco" placeholder="Preço do produto">
 
             <label for="quantidade">Quantidade</label>
-            <input type="range" name="quantidade" min="0" max="100" value="0">
+            <input id="qtd" type="range" name="quantidade" min="0" max="100" value="0">
 
             <label for="descricao">Descrição</label>
-            <textarea name="descricao" placeholder="Descrição do produto"></textarea>
+            <textarea id="descricao" name="descricao" placeholder="Descrição do produto"></textarea>
 
             <label for="imagem">Imagem do Produto</label>
             <input class="file-input" type="file" name="imagem">
@@ -42,7 +42,7 @@
             </button>
         </form>
         <!-- table -->
-        <table>
+        <table id="tableProdutos">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -59,7 +59,7 @@
                     <td>10</td>
                     <td>Descrição do produto 1</td>
                     <td>
-                        <button class="button button-red">
+                        <button class="button button-red removeProduto">
                             Excluir
                         </button>
                     </td>
@@ -70,7 +70,7 @@
                     <td>10</td>
                     <td>Descrição do produto 1</td>
                     <td>
-                        <button class="button button-red">
+                        <button class="button button-red removeProduto">
                             Excluir
                         </button>
                     </td>
